@@ -6,6 +6,13 @@ min-width: 600px → a partir do tablet
 min-width: 1024px → a partir do desktop
 */
 
+/* 
+.color1 { #c68244 };
+.color2 { #dfb48b };
+.color3 { #60300c };
+.color4 { #9a775b };
+.color5 { #b4c1d1 }; */
+
 *{
     margin:0;
     padding:0;
@@ -17,7 +24,7 @@ html{
 
 body{
     height: 100vh;
-    background: linear-gradient(to bottom, rgb(27, 74, 92), rgb(75, 107, 121),rgb(126, 126, 126));
+    background: linear-gradient(to bottom, #c68244,rgb(160, 144, 79), #dfb48b);
     font-family: monospace;
 }
 
@@ -32,7 +39,7 @@ h1{
   width: 80%;
   height: 60vh;
   margin: 0 auto;     /* centraliza horizontalmente */
-  background-color: rgba(165, 42, 42, 0.795);
+  background-color: #9b4b0e;
   padding: 20px;      /* espaçamento interno normal */
   border-radius: 5%;
   margin-bottom: 30px;
@@ -58,7 +65,7 @@ img{
 figcaption{
     margin-top: 5%;
     padding-top: 5px;
-    background: rgba(136, 105, 105, 0.438);
+    background: #97775d;
     border-radius: 4%;
 }
 h2{
@@ -87,12 +94,12 @@ button{
     width: 32%;
     height: 7rem;
     border: none;
-    background: greenyellow;
+    background: #8395c5;
 }
 a{
     font-size: 4rem;
     font-weight: 900;
-    color: rgb(2, 31, 16);
+    color: #15263b;
     text-decoration: none;
 }
 h3{
