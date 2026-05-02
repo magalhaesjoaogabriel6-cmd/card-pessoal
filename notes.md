@@ -2,8 +2,7 @@ Projeto: Card de perfil pessoal
 Criar um card de apresentação (estilo "link na bio") com:
 
 Foto/avatar, nome e profissão
-Lista de links (GitHub, LinkedIn, portfólio)
-Botões com hover animado
+Botões com hover animado (Lista de links (GitHub, LinkedIn, portfólio))
 Layout responsivo (mobile-first)
 
 Stack sugerida: HTML + CSS puro (sem framework)
