@@ -1,4 +1,11 @@
-/* Layout responsivo (mobile-first) */
+/* 
+Layout responsivo (mobile-first)
+
+Sem media query → estilo do celular
+min-width: 600px → a partir do tablet
+min-width: 1024px → a partir do desktop
+*/
+
 
 *{
     margin:0;
