@@ -6,9 +6,76 @@ min-width: 600px → a partir do tablet
 min-width: 1024px → a partir do desktop
 */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: rgb(62, 97, 126);
+    font-family: monospace;
+}
+
+h1{
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* 
+Layout responsivo (mobile-first)
+
+Sem media query → estilo do celular
+min-width: 600px → a partir do tablet
+min-width: 1024px → a partir do desktop
+*/
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+body{
+    background: rgb(62, 97, 126);
+    font-family: monospace;
+}
+
+h1{
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.present {
+  width: 80%;
+  height: 30vh;
+  margin: 0 auto;     /* centraliza horizontalmente */
+  background-color: brown;
+  padding: 20px;      /* espaçamento interno normal */
+}
+
+figure{
+    position: relative;
+    top:0;
+    left:0;
+}
+figcaption{
+
+}
+h2{
+
+}
+p{
+
+}
+button{
+
+}
+a{
+
+}
+h3{
+
 }
