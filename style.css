@@ -31,7 +31,8 @@ body{
 h1{
     margin: 5% 0;
     width: 100%;
-    font-size: 4rem;
+    font-size: 4.3rem;
+    font-weight: 900;
     text-align: center;
 }
 
@@ -99,11 +100,15 @@ button{
 a{
     font-size: 4rem;
     font-weight: 900;
-    color: #15263b;
+    color: #06101d;
     text-decoration: none;
 }
 h3{
-    margin-top: 5%;
-    font-size: 2.5rem;
     text-align: center;
+    margin-top: 5%;
+}
+h3 a{
+    color:black;
+    text-decoration: underline;
+    font-size: 2.5rem;
 }
