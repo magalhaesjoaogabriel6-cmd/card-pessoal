@@ -11,9 +11,13 @@ min-width: 1024px → a partir do desktop
     padding:0;
     box-sizing:border-box;
 }
+html{
+    overflow: hidden;
+}
 
 body{
-    background: rgb(62, 97, 126);
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(27, 74, 92), rgb(75, 107, 121),rgb(126, 126, 126));
     font-family: monospace;
 }
 
@@ -26,10 +30,12 @@ h1{
 
 .present {
   width: 80%;
-  height: 30vh;
+  height: 60vh;
   margin: 0 auto;     /* centraliza horizontalmente */
-  background-color: brown;
+  background-color: rgba(165, 42, 42, 0.795);
   padding: 20px;      /* espaçamento interno normal */
+  border-radius: 5%;
+  margin-bottom: 30px;
 }
 
 figure{
@@ -42,33 +48,55 @@ figure{
 }
 
 img{
-    width:50%;
+    width:90%;
+    height: auto;
     margin-bottom: 25px;
     border-radius: 50%;
-    border: 4px solid rgba(0, 0, 0, 0.493);
+    border: 10px solid rgba(0, 0, 0, 0.493);
 }
 
 figcaption{
+    margin-top: 5%;
     padding-top: 5px;
     background: rgba(136, 105, 105, 0.438);
     border-radius: 4%;
 }
 h2{
-    margin-left: 10%;
-    font-size: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+h2:last-of-type{
+    font-size: 5rem;
 }
 p{
     margin-top: 35px;
     padding-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
+.contact-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: center;
+}
 button{
-
+    position: relative;
+    margin: 20px auto;
+    width: 32%;
+    height: 7rem;
+    border: none;
+    background: greenyellow;
 }
 a{
-
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgb(2, 31, 16);
+    text-decoration: none;
 }
 h3{
-
+    margin-top: 5%;
+    font-size: 2.5rem;
+    text-align: center;
 }
