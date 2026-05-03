@@ -19,11 +19,12 @@ min-width: 1024px → a partir do desktop
     box-sizing:border-box;
 }
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body{
-    height: 100vh;
+    width: 100vw;
+    height: auto;
     background: linear-gradient(to bottom, #c68244,rgb(160, 144, 79), #dfb48b);
     font-family: monospace;
 }
@@ -31,7 +32,7 @@ body{
 h1{
     margin: 5% 0;
     width: 100%;
-    font-size: 4.3rem;
+    font-size: 2.3rem;
     font-weight: 900;
     text-align: center;
 }
@@ -88,6 +89,7 @@ p{
     display: flex;
     flex-direction: row;
     -ms-flex-align: center;
+    justify-content: center;
 }
 button{
     position: relative;
@@ -96,6 +98,12 @@ button{
     height: 7rem;
     border: none;
     background: #8395c5;
+}
+button:hover{
+    background: #39435f;
+}
+button:hover a{
+    color: #010408;
 }
 a{
     font-size: 4rem;
@@ -106,9 +114,28 @@ a{
 h3{
     text-align: center;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 h3 a{
-    color:black;
+    color: #06101d;
     text-decoration: underline;
     font-size: 2.5rem;
+}
+
+@media (max-width: 400px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.1rem; }
+  h2:last-of-type { font-size: 1.3rem; }
+  p  { font-size: 0.9rem; }
+  a  { font-size: 0.85rem; }
+  h3 a{font-size: 0.9rem; }
+  
+  button {
+    height: 5rem;
+  }
+
+  .present {
+    width: 95%;
+    height: auto; /* ← importante! deixa o conteúdo definir a altura */
+  }
 }
