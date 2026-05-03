@@ -24,32 +24,25 @@ html{
 
 body{
     width: 100vw;
-    height: auto;
+    min-height: 100vh;
     background: linear-gradient(to bottom, #c68244,rgb(160, 144, 79), #dfb48b);
     font-family: monospace;
 }
 
 h1{
-    margin: 5% 0;
     width: 100%;
-    font-size: 2.3rem;
     font-weight: 900;
     text-align: center;
 }
 
 .present {
-  width: 80%;
-  height: 60vh;
-  margin: 0 auto;     /* centraliza horizontalmente */
+  margin: 0 auto;
   background-color: #9b4b0e;
-  padding: 20px;      /* espaçamento interno normal */
   border-radius: 5%;
-  margin-bottom: 30px;
 }
 
 figure{
     position: relative;
-    top:10px;
     left:0;
     display: flex;
     flex-direction: column;
@@ -57,31 +50,19 @@ figure{
 }
 
 img{
-    width:90%;
     height: auto;
-    margin-bottom: 25px;
     border-radius: 50%;
     border: 10px solid rgba(0, 0, 0, 0.493);
 }
 
 figcaption{
-    margin-top: 5%;
-    padding-top: 5px;
     background: #97775d;
     border-radius: 4%;
 }
 h2{
-    font-size: 4rem;
     text-align: center;
-    margin-bottom: 15px;
-}
-h2:last-of-type{
-    font-size: 5rem;
 }
 p{
-    margin-top: 35px;
-    padding-bottom: 20px;
-    font-size: 2rem;
     text-align: center;
 }
 .contact-buttons{
@@ -93,9 +74,6 @@ p{
 }
 button{
     position: relative;
-    margin: 20px auto;
-    width: 32%;
-    height: 7rem;
     border: none;
     background: #8395c5;
 }
@@ -106,36 +84,116 @@ button:hover a{
     color: #010408;
 }
 a{
-    font-size: 4rem;
     font-weight: 900;
     color: #06101d;
     text-decoration: none;
 }
 h3{
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 h3 a{
     color: #06101d;
     text-decoration: underline;
-    font-size: 2.5rem;
 }
 
-@media (max-width: 400px) {
-  h1 { font-size: 1.5rem; }
-  h2 { font-size: 1.1rem; }
-  h2:last-of-type { font-size: 1.3rem; }
-  p  { font-size: 0.9rem; }
-  a  { font-size: 0.85rem; }
-  h3 a{font-size: 0.9rem; }
-  
-  button {
-    height: 5rem;
-  }
+/* celular */
 
-  .present {
+h1{ 
+    font-size: 1.5rem;
+    margin: 5% 0;
+}
+h2{
+    font-size: 1.1rem; 
+    margin-bottom: 15px;
+}
+h2:last-of-type { font-size: 1.3rem; }
+a{ font-size: 0.85rem; }
+h3 a{font-size: 0.9rem; }
+p{
+    font-size: 0.9rem; 
+    margin-top: 35px;
+    padding-bottom: 20px;
+}
+
+h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+button {
+    height: 5rem;
+    margin: 20px auto;
+    width: 32%;
+}
+figcaption{
+    margin-top: 5%;
+    padding-top: 5px;
+}
+
+img{
+    width:90%;
+    margin-bottom: 25px;
+    border-radius: 50%;    }
+
+.present {
     width: 95%;
     height: auto; /* ← importante! deixa o conteúdo definir a altura */
-  }
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+figure{
+    top:10px;
+}
+
+
+
+@media (max-width: 400px) {
+    h1{ 
+        font-size: 1.5rem;
+        margin: 5% 0;
+    }
+    h2{
+        font-size: 1.1rem; 
+        margin-bottom: 15px;
+    }
+    h2:last-of-type { font-size: 1.3rem; }
+    a{ font-size: 0.85rem; }
+    h3 a{font-size: 0.9rem; }
+    p{
+        font-size: 0.9rem; 
+        margin-top: 35px;
+        padding-bottom: 20px;
+    }
+  
+    h3{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    button {
+        height: 5rem;
+        margin: 20px auto;
+        width: 32%;
+    }
+    figcaption{
+        margin-top: 5%;
+        padding-top: 5px;
+    }
+
+    img{
+        width:90%;
+        margin-bottom: 25px;
+        border-radius: 50%;    }
+
+    .present {
+        width: 95%;
+        height: auto; /* ← importante! deixa o conteúdo definir a altura */
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    figure{
+        top:10px;
+    }
 }
